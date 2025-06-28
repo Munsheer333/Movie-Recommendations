@@ -12,7 +12,7 @@ st.set_page_config(page_title="Movie Recommendations", layout="wide")
 @st.cache_data
 def load_data():
     url="https://raw.githubusercontent.com/Munsheer333/Movie-Recommendations/refs/heads/main/Movie%20Recommendations%20Based/movies.csv"
-    df = pd.read_csv("url")
+    df = pd.read_csv(url)
     return df
 
 df = load_data()
